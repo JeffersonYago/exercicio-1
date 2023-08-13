@@ -4,8 +4,8 @@ public class SomaController {
 		super();
 	}
 	public int soma(int n){
-	    if(n == 0)
-// quando n for igual a 0, a função deixará de ser chamada para ser realizada a soma dos números anteriores
+	    if(n <= 0)
+// quando n for menor ou igual a 0, a função deixará de ser chamada para ser realizada a soma dos números anteriores
 	        return 0;
 	    else
 	        return n + soma(n - 1);
